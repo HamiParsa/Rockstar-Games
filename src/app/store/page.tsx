@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaShoppingCart, FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 type Product = {
   id: number;
@@ -80,7 +81,9 @@ export default function StorePage() {
           href="/cart"
           className="inline-flex items-center gap-3 bg-orange-500 text-black font-bold px-6 py-3 rounded-full hover:bg-orange-600 shadow-[0_8px_30px_rgba(255,115,0,0.2)] transition"
         >
+          <Link href="/cart">
           <FaShoppingCart /> Go to Cart ({cart.length})
+          </Link>
         </a>
       </div>
     </div>
