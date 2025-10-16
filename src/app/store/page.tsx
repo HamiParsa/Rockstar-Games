@@ -74,14 +74,6 @@ export default function StorePage() {
           );
         })}
       </main>
-
-      <div className="text-center mt-12">
-        <a
-          href="/cart"
-          className="inline-flex items-center gap-3 bg-orange-500 text-black font-bold px-6 py-3 rounded-full hover:bg-orange-600 shadow-[0_8px_30px_rgba(255,115,0,0.2)] transition"
-        >
-        </a>
-      </div>
     </div>
   );
 }
